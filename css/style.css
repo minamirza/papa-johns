@@ -61,6 +61,7 @@ body {
   align-items: center;
   gap: 20px;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .login {
@@ -372,5 +373,3 @@ body {
   display: block;
 }
 }
-
-
