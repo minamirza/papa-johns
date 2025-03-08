@@ -1,136 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PapaJohns</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-
-  <body>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="mh-100">
     <header>
-      <div class="header-container">
-        <nav class="desktop-nav">
-          <ul class="menu-list">
-            <li><a href="#restoranlar">Restoranlar</a></li>
-            <li><a href="#papabonus">PapaBonus</a></li>
-          </ul>
-        </nav>
-        <div class="user-options">
-          <div class="language-selector">
-            <img src="img/flag_az.png" alt="azflag" />
-            <p>Azerbaycanca</p>
+     <div class="topHeader font">
+          <div class="container justify-between">
+            <a id="logo" href="index.html"><img id="logoImg" src="img/pj_logo.png" alt="logo"></a>
+            <div class="justify-between">
+                <h4>Restoranlar</h4>
+                <h4>PapaBonus</h4>
+            </div>
+            <div class="justify-between">
+                <div class="justify-between">
+                    <img id="flag" src="img/flag_az.png" alt="flag">
+                    <span>Azərbaycanca</span>
+                     <span id="aze">Az</span>
+                </div>
+                <h4>
+                    Giriş /Qeydiyyat
+                </h4>
+                <div id="logIcon"><i class="fa-solid fa-user"></i></div>
+                <i onclick="showBasket()" class="fa fa-shopping-basket"></i>
+            </div>
           </div>
-          <div class="login">Giriş/Qeydiyyat</div>
-        </div>
-      </div>
+     </div>
+    <nav>   
+        <div class="container justify-between font">    
+       <ul id="menu" class="justify-between ">
 
-      <button class="mobile-menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-    </header>
-
-    <div class="menu-bar">
-      <a href="#" class="logo">
-        <img src="img/image.png" alt="logo" />
-      </a>
-      <ul class="menu-list">
-        <li><a href="index.html">Kampaniyalar</a></li>
-        <li><a href="papadies.html">Papadies</a></li>
-        <li><a href="pizzalar.html">Pizza</a></li>
-        <li><a href="lunch.html">Qəlyanaltılar</a></li>
-        <li><a href="salat.html">Salat</a></li>
-        <li><a href="pasta.html">Pasta</a></li>
-        <li><a href="souslar.html">Souslar</a></li>
-        <li><a href="drink.html">İçki</a></li>
-        <li><a href="desert.html">Desertlər</a></li>
-      </ul>
+       </ul>
+         <div class="bal">
+            <p>0 bal? <span class="font">?</span></p>
+         </div>
     </div>
+     </nav>
+    </header>
+    <main id="main">
+ <div class="container justify-between font topMain">
+    <div class="justify-between"><p>Promo kodunuz var?</p> <span class="color-gr">Endirimdən istifadə edin!</span></div>
+    <div class="search justify-between"><input type="text" id="searcInp" placeholder="PROMO KODU DAXIL EDIN"><button class="font">Ok</button></div>
+ </div>
+ <div id="content" class="container cards">
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/slider1.png" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider2.png" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider3.png" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider4.png" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider5.png" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider6.png" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider7.jpeg" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider8.png" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider9.png" alt="slide image" ></div>
+      <div class="swiper-slide"><img src="img/slider10.jpeg" alt="slide image" ></div>
+     
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
 
-    <section class="promo-c">
-      <div class="promo-wrapper">
-        <div class="promo-code">
-          <p>Promo kodunuz var? <span>Endirimdən istifadə edin!</span></p>
-        </div>
-        <div class="inp-code">
-          <input
-            type="text"
-            class="promo-input"
-            placeholder="Promo kodu daxil edin"
-          />
-          <button class="promo-button">OK</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="swiper-container">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="img/slider1.png" alt="Slide-1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slider2.png" alt="Slide-2" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slider3.png" alt="Slide-3" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slider4.png" alt="Slide-4" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slider5.png" alt="Slide-5" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slider6.png" alt="Slide-6" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slider7.jpeg" alt="Slide-7" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/slider10.jpeg" alt="Slide-8" />
-          </div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-left">
-          <span class="footer-text">© PJA 2024</span>
-        </div>
-
-        <ul class="footer-links">
-          <li><a href="#">Haqqımızda</a></li>
-          <li><a href="#">Sual və Cavab</a></li>
-          <li><a href="#">Karyera</a></li>
-          <li><a href="#">Xəmir</a></li>
-          <li><a href="#">Papa Talk - Şərtlər və Qaydalar</a></li>
-        </ul>
-      </div>
+  </div>
+  <!---->
+  <!-- <div class="cardModal">
+    <div class="cardImg">
+      <img src="${item.img}" alt="image">
+    </div>
+    <div class="cardMain">
+         <div class="cardText">
+                <p>"${item.composition}"</p>
+         </div>
+    </div>
+   </div> -->
+  <!--  -->
+    </main>
+    <footer>
+         <div class="container justify-between"><p>© PJA 2024</p>
+            <ul id="footerMenu">
+                <li><a href="#">Haqqımızda  
+                    </a></li>
+                    <li><a href="#"> Sual və Cavab</a></li>
+                    <li><a href="#">Karyera</a></li>
+                    <li><a href="#">Xəmir</a></li>
+                    <li><a href="#">Papa Talk - Şərtlər və Qaydalar</a></li>
+            </ul></div>
     </footer>
-    
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+</div>
+<div onclick="closeModal()" id="modalContainer">
+  
+   <div id="modal" onclick="event.stopPropagation()">
+   <button id="close" class="close" onclick="closeModal()">X</button>
+      <div id="modalContent">
+      </div>
+   </div>
+</div>
+<div id="basket">
+  <button class="close" onclick="closeBasket()">X</button>
+  
+    <div id="basketContent">
+     
+   </div>
+   <div id="basketBottom">
+    <div class="prices">
+      <h4 id="totalPrice">Umumi qiymet:0.00$</h4>
+      <h4 id="discountedPrice">Endirimli qiymet:0.00$</h4>
+      <h4 id="discount">Endirim:0.00$</h4>
+    </div>
+    <button  class="button basketButton" onclick="clearBasket()">sebeti temizle</button>
+   
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/data.js"></script>
+<script src="js/index.js"></script>
+</body>
 </html>
